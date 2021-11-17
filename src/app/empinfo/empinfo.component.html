@@ -1,0 +1,89 @@
+<p>empinfo works!</p>
+<!-- <input type="tel"  pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$" class="form-control" id="Telephone"
+                                    aria-describedby="telephoneHelp" placeholder="Enter telephone" required>
+
+<div class="col-md-3" *ngFor="let emps of empData">
+
+    <p>ID : {{emps.id}} : Name : {{emps.name}} :  UserName : {{emps.username}}  :  E Mail : {{emps.email}} 
+</div> -->
+
+<div class="container">
+    <h2>Form Validation</h2>
+    <p>In this example, we use <code>.was-validated</code> to indicate what's missing before submitting the form:</p>
+    <form action="/action_page.php" class="was-validated">
+      <div class="form-inline">
+
+<!-- app.component.html
+<div class="container-fluid">
+    <form #usersEmail="ngForm">
+      <h2>Please provide your email address</h2>
+  
+      <div class="form-group">
+        <label>Primary Email:</label>
+        <input type="email" #firstEmail="ngModel"
+    	[class.is-invalid]="firstEmail.invalid && firstEmail.touched" required
+    	pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$" class="form-control" name="primaryEmail"
+        [(ngModel)]="userModel.primaryAddress" />
+        
+        <div *ngIf="firstEmail.errors && (firstEmail.invalid || firstEmail.touched)">
+            <small class="text-danger" *ngIf="firstEmail.errors.required">Primary email is required</small>
+            <small class="text-danger" *ngIf="firstEmail.errors.pattern">Please provide a valid email address</small>
+          </div>
+  </div>
+  
+  
+    </form>
+  </div> -->
+
+        
+
+        
+
+        <label for="uname">Username:</label>
+        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+
+        <label for="uname">Email id :</label>
+        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      
+
+        <label for="uname">Phone  : </label>
+        <input type="text" class="form-control" id="uphone" placeholder="Enter phone" name="phone" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      
+
+        <label for="uname"> image: </label>
+        <input type="text" class="form-control" id="uimage" placeholder="insert image " name="uimage" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      
+
+        <label for="uname">Location : </label>
+        <input type="text" class="form-control" id="ulocation" placeholder="Enter location" name="ulocation" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+
+        <label for="uname">Address: </label>
+        <input type="text" class="form-control" id="uaddress" placeholder="Enter Address" name="uaddress" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="upwd" placeholder="Enter password" name="upassword" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+     
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Check this checkbox to continue.</div>
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  
